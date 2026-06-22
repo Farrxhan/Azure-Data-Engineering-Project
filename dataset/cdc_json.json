@@ -1,0 +1,29 @@
+{
+	"name": "cdc_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_ADLS_Project",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_container": {
+				"type": "string"
+			},
+			"p_folder": {
+				"type": "string"
+			},
+			"p_filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
